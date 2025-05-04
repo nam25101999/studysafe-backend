@@ -5,16 +5,17 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: node server.js
+    autoDeploy: true
     envVars:
       - key: PORT
         value: 10000
       - key: DB_HOST
         value: your_mysql_host
       - key: DB_USER
-        value: your_user
+        value: your_mysql_user
       - key: DB_PASSWORD
-        value: your_password
+        value: your_mysql_password
       - key: DB_NAME
-        value: your_db
+        value: studysafe
       - key: JWT_SECRET
         value: your_jwt_secret

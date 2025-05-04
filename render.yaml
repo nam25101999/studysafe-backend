@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: studysafe-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DB_HOST
+        value: your_mysql_host
+      - key: DB_USER
+        value: your_user
+      - key: DB_PASSWORD
+        value: your_password
+      - key: DB_NAME
+        value: your_db
+      - key: JWT_SECRET
+        value: your_jwt_secret
